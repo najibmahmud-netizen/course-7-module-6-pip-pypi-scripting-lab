@@ -1,6 +1,8 @@
 from datetime import datetime
 import requests
 
+
+
 log_data = ["User logged in", "User updated profile", "Report exported"]
 
 filename = f"log_{datetime.now().strftime('%Y%m%d')}.txt"
