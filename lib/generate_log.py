@@ -1,8 +1,6 @@
 from datetime import datetime
 
-
 def generate_log(log_data):
-    # Must be a list
     if not isinstance(log_data, list):
         raise ValueError("Input must be a list")
 
@@ -11,5 +9,7 @@ def generate_log(log_data):
     with open(filename, "w") as file:
         for entry in log_data:
             file.write(f"{entry}\n")
+
+    print(f"Log written to {filename}")
 
     return filename
